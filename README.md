@@ -8,7 +8,7 @@ Status
 Features
 ========
 
-- Doxygen documentation generation is built-in by default. If their guidelines are followed, HTML documentation will be updated automatically subsequent to compilation. Otherwise, please alter the config.txt file to disable documentation generation.
+- Doxygen documentation generation is built-in by default. If their guidelines are followed, HTML documentation will be updated automatically subsequent to compilation. Otherwise, please alter the config file to disable documentation generation.
 
 - CMake, configured to produce multiple executables and cross-platform builds:
 	- one for each file's unit tests
@@ -44,12 +44,10 @@ Installation
 
 - Clone this repository to your local machine:
 - Rename the top-level directory.
-- Modify the configuration file.
 ```
 git clone git@github.com:dasmithii/C-Project-Template.git
 mv C-Project-Template PROJECT_NAME
 cd PROJECT_NAME
-open config.txt
 ```
 
 

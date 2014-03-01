@@ -1,0 +1,63 @@
+
+\begin{DoxyItemize}
+\item Not ready for production. Check back soon!
+\end{DoxyItemize}
+
+\section*{Features }
+
+
+\begin{DoxyItemize}
+\item Doxygen documentation generation is built-\/in by default. If their guidelines are followed, H\+T\+M\+L documentation will be updated automatically subsequent to compilation. Otherwise, please alter the config file to disable documentation generation.
+\item C\+Make, configured to produce multiple executables and cross-\/platform builds\+:
+\begin{DoxyItemize}
+\item one for each file's unit tests
+\item the project executable (from files in the /src directory)
+\item an umbrella test, which calls all other tests sequencially, reporting the results
+\end{DoxyItemize}
+\item Utility data structures and algorithms stored in the /src/util directory. These are dependent only on the C standard library, and include the following\+:
+\begin{DoxyItemize}
+\item binary search trees
+\item ternary search trees
+\item hash tables
+\item linked lists
+\item vectors (dynamic arrays)
+\item queues
+\item stacks
+\item memory pools (w/ garbage collection)
+\item string algorithms
+\item error-\/handling macros
+\end{DoxyItemize}
+\item File generator scripts\+:
+\begin{DoxyItemize}
+\item to automate file creation
+\item to standardize file documentation
+\item to attribute files to their creators
+\end{DoxyItemize}
+\item Configuration file for quick modifications\+:
+\begin{DoxyItemize}
+\item project name
+\item version \& status
+\item authors
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\section*{Installation }
+
+
+\begin{DoxyItemize}
+\item Clone this repository to your local machine\+:
+\item Rename the top-\/level directory. ``` git clone \href{mailto:git@github.com}{\tt git@github.\+com}\+:dasmithii/\+C-\/\+Project-\/\+Template.\+git mv C-\/\+Project-\/\+Template P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+M\+E cd P\+R\+O\+J\+E\+C\+T\+\_\+\+N\+A\+M\+E ```
+\end{DoxyItemize}
+
+\section*{Compilation }
+
+
+\begin{DoxyItemize}
+\item Go to top-\/level directory.
+\item Run these commands\+:
+\end{DoxyItemize}
+
+``` cmake . make ```
+\begin{DoxyItemize}
+\item Executables will be places in /bin 
+\end{DoxyItemize}
