@@ -10,8 +10,7 @@ Features
 
 - Doxygen documentation generation is built-in by default. If their guidelines are followed, HTML documentation can be updated using the `doxygen Doxyfile` command.
 
-- CMake, configured to produce multiple executables and cross-platform builds:
-	- one for each file's unit tests
+- CMake, configured to produce executables:
 	- the project executable (from files in the /src directory)
 	- an umbrella test, which calls all other tests sequencially, reporting the results
 
@@ -49,7 +48,6 @@ git clone git@github.com:dasmithii/C-Project-Template.git
 mv C-Project-Template PROJECT_NAME
 cd PROJECT_NAME
 ```
-
 
 
 Compilation
