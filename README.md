@@ -8,7 +8,7 @@ Status
 Features
 ========
 
-- Doxygen documentation generation is built-in by default. If their guidelines are followed, HTML documentation will be updated automatically subsequent to compilation. Otherwise, please alter the config file to disable documentation generation.
+- Doxygen documentation generation is built-in by default. If their guidelines are followed, HTML documentation can be updated using the `doxygen Doxyfile` command.
 
 - CMake, configured to produce multiple executables and cross-platform builds:
 	- one for each file's unit tests
