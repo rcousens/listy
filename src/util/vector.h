@@ -46,5 +46,7 @@ size_t vec_elem_size  (const vector *const);
 const int vec_foreach (vector *const, void (*)(void *));
 const int vec_foreach_that (vector *const, bool (*)(void *), void (*)(void *));
 
+#define vec_get_as(vec, ind, type) *((type *) vec_get(vec, ind))
+
 
 #endif // _UTIL_VECTOR_H_

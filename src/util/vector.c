@@ -85,7 +85,7 @@ void *vec_back (const vector *const vec)
 // Appends value. Returns non-zero
 const int vec_push_back (vector *const vec, const void *const val)
 {	
-	return vec_insert(vec, val, vec->size - 1);
+	return vec_insert(vec, val, vec->size);
 }
 
 
@@ -100,9 +100,8 @@ const int vec_push_front (vector *const vec, const void *const val)
 const int vec_insert (vector *const vec, const void *const val, const unsigned int ind)
 {	
 	// Check for valid args...
-	if(ind > vec->size  ||  !vec  ||  !val) {
+	if(ind > vec->size  ||  !vec  ||  !val)
 		return -1;
-	}
 
 	// Ensure capacity for incoming value.
 	vec_reserve(vec, (vec->size + 1) * 2);
@@ -115,11 +114,11 @@ const int vec_insert (vector *const vec, const void *const val, const unsigned i
 		memmove(dest, from, vec->elem_size);
 	}
 
-	// Insert value
-	vec_set(vec, ind, val);
-
 	// Update size.
 	vec->size += 1;
+
+	// Insert value
+	vec_set(vec, ind, val);
 
 	// Return success.
 	return 0;
