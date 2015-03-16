@@ -66,10 +66,13 @@ void sll_print_list(sll_node* list)
 */
 void sll_destroy_list(sll_node* list)
 {
+    sll_node* current;
+    sll_node* next;
     // for each node in list, free until null is reached
-    for(sll_node* next = list; next; list = next) {
-        next = list->next;
-        free(list);
+    for(current = list->next; current; current = next) {
+        next = current->next;
+        printf("Freeing %d\n", current->value);
+        free(current);
     }
 }
 

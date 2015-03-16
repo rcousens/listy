@@ -2,16 +2,16 @@
 #include "single-list/single-linked-list.h"
 
 int main(int argc, char *argv[]){
-	sll_node* root;
+	sll_node list;
+	list.value = 13;
+	list.next = NULL;
 
-	root = sll_new_list(13);
+	sll_add_to_list(&list, 14);
+	sll_add_to_list(&list, 15);
+	sll_add_to_list(&list, 16);
 
-	sll_add_to_list(root, 14);
-	sll_add_to_list(root, 15);
-	sll_add_to_list(root, 16);
+	sll_print_list(&list);
 
-	sll_print_list(root);
-
-	sll_destroy_list(root);
+	sll_destroy_list(&list);
 	return 0;
 }
