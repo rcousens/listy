@@ -3,7 +3,7 @@ project(listy)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror -ggdb")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Werror -ggdb -std=c11")
 
 FILE(GLOB_RECURSE SOURCE_FILES src/*.c src/*.h)
 
