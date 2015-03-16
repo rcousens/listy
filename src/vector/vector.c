@@ -108,7 +108,7 @@ const int vec_insert (vector *const vec, const void *const val, const unsigned i
 
 	// Shift values backward.
 	unsigned int i;
-	for(i = i = vec->size; i > ind; --i) {
+	for(i = vec->size; i > ind; --i) {
 		char *from = vec_get(vec, ind - 1);
 		char *dest = vec_get(vec, ind);
 		memmove(dest, from, vec->elem_size);
