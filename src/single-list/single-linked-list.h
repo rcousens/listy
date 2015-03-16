@@ -5,9 +5,9 @@
 #ifndef _LISTY_LINKED_LIST_H_
 #define _LISTY_LINKED_LIST_H_
 
-typedef struct sll_node {
+typedef struct sll_node_t {
     int value;
-    struct sll_node* next;
+    struct sll_node_t* next;
 } sll_node;
 
 sll_node* sll_new_list(int value);

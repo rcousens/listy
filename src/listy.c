@@ -2,7 +2,7 @@
 #include "single-list/single-linked-list.h"
 
 int main(int argc, char *argv[]){
-	struct sll_node* root;
+	sll_node* root;
 
 	root = sll_new_list(13);
 
