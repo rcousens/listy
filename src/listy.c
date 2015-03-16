@@ -2,9 +2,7 @@
 #include "single-list/single-linked-list.h"
 
 int main(int argc, char *argv[]){
-	sll_node list;
-	list.value = 13;
-	list.next = NULL;
+	sll_node list = {13, NULL};
 
 	sll_add_to_list(&list, 14);
 	sll_add_to_list(&list, 15);
